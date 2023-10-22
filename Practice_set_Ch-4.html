@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Q1) What will the following print in javaScipt?
+         console.log("har\"".length)*/
+         const name = "har\"";
+         console.log(name.length);
+
+        //Q2) Explore the includes, starts with & ends with function of a string.
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const word = 'fox';
+
+        console.log(`The word ${word} ${sentence.includes(word) ? 'is' : 'is not' } in the sentence`)
+
+
+        //Q3) Write a program to convert a given String to lowerCase.
+        const myself = "MANISH KUMAR";
+        console.log(myself);
+        console.log(myself.toLowerCase());
+
+
+        /*Q4) Extract the amount out of this string 
+        "Please give Rs 1000"*/
+        const money = "Please give Rs 1000" ; 
+        const amount = Number.parseInt( money.slice(15));
+        console.log(amount);
+        console.log(typeof amount);
+         
+         
+
+        //Q5) Try to change 4th charater of a given string were you able to do it?
+        const test = 'Shivika';
+        test[3] = 'l';
+        console.log(test);
+        console.log(test.replace("v", "l"));
+
+
+    </script>
+</head>
+<body>
+    <h1>Practice set-4</h1>
+    <h2>Inspect the html page and go to console to view the practice set and view code in script tag inside the head.</h2>
+     
+    <ol>
+        <li>What will the following print in javaScipt ?
+            <br>console.log("har\"".length)
+        </li>
+        <li>Explore the includes, starts with & ends with function of a string.</li>
+        <li>Write a program to convert a given String to lowerCase.</li>
+        <li>Extract the amount out of this string 
+           <br> "Please give Rs 1000"
+        </li>
+        <li>Try to change 4th charater of a given string were you able to do it?</li>
+    </ol>
+    
+</body>
+</html>
