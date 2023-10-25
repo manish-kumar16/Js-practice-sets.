@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //Q1)Create an array of Number and take input from the user to add number to the array.
+       let arr = [1, 2, 3, 4, 5];
+    //    let a = prompt('enter a number');
+    //    a = Number.parseInt(a);
+    //    arr.push(a)
+    //    console.log(arr);
+       //Q2)Keep adding number to the array in 1 until 0 is added to the array.
+    //    do{
+    //     a = prompt('enter a number');
+    //     a = Number.parseInt(a);
+    //     arr.push(a)
+    //    }while(a != 0){
+    //     console.log(arr);
+    //    }
+       //Q3)Filter for number divisible by 10 from a given array.
+       let arr2 = [133200, 2010, 3820, 43728, 533623];
+        let result = arr2.filter((x)=>{
+            return x%10 == 0
+        });
+        console.log(result);
+
+       //Q4)crate an array of square of given numbers.
+       let arr3 = [7, 8 , 9, 334, 253]
+       let square = arr3.map((x)=>{
+        return x*x
+       })
+       console.log(square);
+
+       //Q5)Use reduce to calculate factorial of a given number from an array of first n natural number (n being the number where factorial needs to be calculated).
+       let arr4 = [2,4,2]; 
+       let factorial = arr4.reduce((a, b)=>{
+        return a * b
+       })
+       console.log(factorial)
+
+    </script>
+</head>
+<body>
+    <h1>Practice set-5</h1>
+    <h2>Inspect the html page and go to console to view the practice set and view code in script tag inside the head.</h2>
+     
+    <ol>
+        <li>Create an array of Number and take input from the user to add number to the array.</li>
+        <li>Keep adding number to the array in 1 until 0 is added to the array.</li>
+        <li>Filter for number divisible by 10 from a given array.</li>       
+        <li>crate an array of square of given numbers.</li>
+        <li>Use reduce to calculate factorial of a given number from an array of first n natural number (n being the number where factorial needs to be calculated).</li>
+    </ol>
+    
+</body>
+</html>
