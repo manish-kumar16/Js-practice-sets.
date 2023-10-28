@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <script>
+        //Guess a Number
+
+        let a = Math.random() * 10;
+        a = Number.parseInt(a)
+        let inp;
+        let score = 0;
+
+        while (inp != a) {
+            score = score + 1;
+            inp = prompt("Enter the Number : ");
+            if (inp == a) {
+                console.log("Congrates! you guess the correct number.")
+                console.log(`you guess the actual number in ${score + 1 - 1} chances.`)
+            } else if (inp > a && inp < 10) {
+                console.log("your number is greater than the actual number.")
+            } else if (inp < a && inp > 0) {
+                console.log("your number is smaller than the actual number.")
+            } else {
+                console.log("Enter the number between 1 to 10");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Exercise_1_Guess_the_number</h1>
+    <p>Write the JavaScipt program to generate a random number and store it in the variable. The program then takes an
+        input from the user to tell them whether the guess was correct, greater or lesser than the orignal number. 10 -
+        (no. of guesses) the score of the user the program is expected to terminal onece the clossed. number should be
+        b/w 1 - 10.</p>
+
+</body>
+
+</html>
