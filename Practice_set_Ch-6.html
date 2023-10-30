@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Q1) 
+        // let runAgain = true;
+        // const canDrive = (age) => {
+        //     return age >= 18 ? true : false;
+        // }
+        // while (runAgain) {
+        //     let age = prompt("Enter your Age!");
+        //     age = Number.parseInt(age);
+
+        //     //Q3)
+        //     if( age <= 0 ){             
+        //         console.error("please enter the correct value")
+        //         break;
+        //     }
+        //     if (canDrive(age)){
+        //         alert("You can Drive")
+        //     } else {
+        //         alert("You can\'t drive");
+        //     }
+        //     //Q2)
+        //     runAgain = confirm("Do you want to run Again?")
+        // }
+
+
+        //     //Q4)        
+        //     let playAgain = true;
+        //     const mrThn4 = (num) => {
+        //         return num > 4 ? true : false;
+        //     }
+        //     while(playAgain){
+        //     let num = prompt("Enter the number");
+        //     num = Number.parseInt(num);
+        //     if (mrThn4(num)){
+        //         location.href="https://google.com"
+        //     }else{
+        //         alert("Failed")
+        //     }
+        //     playAgain = confirm("Do want to play again?");
+        // }
+
+        //Q5) 
+        let wantPickAgin = true;
+        while (wantPickAgin) {
+            let Color = prompt("Enter your favourite color!")
+            document.body.style.background = Color
+            wantPickAgin = confirm("Do you want to play Again")
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Practice set-6</h1>
+    <h2>Inspect the html page and go to console to view the practice set and view code in script tag inside the head.
+    </h2>
+
+    <ol>
+        <li>Write program using prompt fuction to take input of age as a value from the user and use alert to tell him
+            if he can drive!</li>
+        <li>In Q1 use confirm to ask the user if he wanted to see the prompt again.</li>
+        <li>In the previous question, ues console error to log the error it the age entered is negative.</li>
+        <li>Write a program to change the url to google (Redirection) if user enters a number greater tha 4</li>
+        <li>Change the background of the page to yellow, red or any other color based on user input through prompt.</li>
+    </ol>
+
+</body>
+
+</html>
