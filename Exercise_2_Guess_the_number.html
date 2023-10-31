@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Snake, water and gun game.
+
+        let a = true;
+        while (a) {
+            let user = prompt("Lets play Snake, Water, and Gun...! Select S, W and G");
+            let cpuI = Math.floor(Math.random() * 3);
+            let cpu = ["S", "W", "G"][cpuI];
+            const match = (user, cpu) => {
+
+                if (cpu === user) {
+                    return "DRAW"
+                }
+
+                else if (cpu === "S" && user === "W") {
+                    return "CPU"
+                }
+
+                else if (cpu === "S" && user === "G") {
+                    return "USER"
+                }
+
+                else if (cpu === "W" && user === "S") {
+                    return "USER"
+                }
+
+                else if (cpu === "W" && user === "G") {
+                    return "CPU"
+                }
+
+                else if (cpu === "G" && user === "S") {
+                    return "CPU"
+                }
+
+                else if (cpu === "G" && user === "W") {
+                    return "USER"
+                };
+            };
+            result = (match(user, cpu));
+            document.write(` <br>USER:${user}<br> and <br>CPU:${cpu} <br><br>WINNER : ${result}<br><br>`);
+            a = confirm("Do You Want To Play Again!");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Thank you for Playing....! Snake, water and gun game.</h1>
+</body>
+
+</html>
