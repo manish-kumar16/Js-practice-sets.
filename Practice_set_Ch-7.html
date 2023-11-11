@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar ul {
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px 30px;
+            margin: 10px 10px;
+
+        }
+
+        .navbar ul a {
+            list-style: none;
+            text-decoration: none;
+            color: seagreen;
+        }
+
+        .navbar li:hover {
+            background-color: black;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            //Q1)
+            let a = document.getElementsByTagName("a")
+            a[0].style.color = "red";
+
+            //Q2)
+            let first = document.getElementsByClassName("name")[0].firstElementChild
+            first.style.color = "red";
+            let last = document.getElementsByClassName("name")[0].lastElementChild
+            last.style.color = "red";
+
+            //Q3)
+            Array.from(document.getElementsByTagName("li")).forEach((element) => {
+                element.style.background = "cyan"
+            })
+
+        } 
+    </script>
+</head>
+
+<body>
+    <h1>Practice set-7</h1>
+    <h2>Inspect the html page and go to console to view the practice set and view code in script tag inside the head.
+    </h2>
+    <ol>
+        <li>Create a navbar and change the color of its first element to red.</li>
+        <nav class="navbar">
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Contact Us</li>
+                </a>
+                <a href="#">
+                    <li>More Info</li>
+                </a>
+
+            </ul>
+        </nav>
+        <li>Create a table without tbody now use "view page source button to check whether it has a tbody or not.</li>
+
+        <table border="5">
+            <td>Manish</td>
+            <td>Sachin</td>
+            <td>Sakshi</td>
+        </table>
+        <p>The answer is : No, because the view page source show us Raw source.</p>
+
+
+        <li>Create an element with 3 children now change the color of first and last element to red</li>
+        <ul class="name">
+            <li>Manu</li>
+            <li>Soni</li>
+            <li>Gauri</li>
+        </ul>
+
+        <li>Write a Js code to change background of all li tag to cyan.</li>
+        <p>Done.....inside script tag</p>
+        <li>Which of the following is used to look for the further ancestor that matches a given CSS selector</li>
+        <ol>
+            <li>matches</li>
+            <li>closet</li>
+            <li>cointains</li>
+            <li>none of these</li>
+        </ol>
+
+        <p>answer : 4. none of these</p>
+    </ol>
+</body>
+
+</html>
