@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <style>
+        body{
+            background-color: bisque;
+            width: 70%;
+            margin: auto;
+        }
+        .center{
+            background-color: rgb(246, 115, 115);
+        }
+    </style>
 </head>
 
 <body>
@@ -14,9 +23,9 @@
         from the internet (use any website to Create the array) your website should show a random joke on every reload
         Min length of your jokes array should be 10.</p>
 
-    <h1>Jokes</h2>
+    <h1 class="center">Jokes</h2>
     <script>
-        let random = Math.floor(Math.random() * 30);
+        let random = Math.floor(Math.random() * 29);
         let ranJokes = [
             'What falls, but never needs a bandage? The rain.',
             'I was going to tell you a joke about boxing but I forgot the punch line.',

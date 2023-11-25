@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb{
+            height:100px ;
+            width:100px ;
+            background-color: red;
+        }
+
+        .bulb-off{
+            height:100px ;
+            width:100px ;
+            background-color: blue;
+        }
+
+        .bulb-green{
+            height:100px ;
+            width:100px ;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Practice set-8</h1>
+    <h2>Inspect the html page and go to console to view the practice set and view code in script tag inside the head.</h2>
+     
+    <ol>
+        <li>Write a program to show different alerts when different buttons are clicked.</li>
+        <button onclick="alert('I want Burger')">Burger</button>
+        <button onclick="alert('I want Pizza')">Pizza</button>
+        <button onclick="alert('I want Momos')">Momos</button>
+        <li>Create a website which is capable of storing bookmarks of your favorite websites using href.</li>
+        <h1>bookmarks</h1>
+        <button>Goggle</button>
+        <button>facebook</button>
+        <a href="https://twitter.com"><button>twitter</button></a>
+        <li>Repeat Q2 using event listeners</li>
+        DONE in script....!
+        <li>Write a javaScript program to keep fetching content of a website (every 5 second).</li>
+        <li>Crate a glowing bulb effect using classlist toggle method in javaScript.</li>
+        <div class="bulb"></div>
+    </ol>
+    <script>
+        let a = document.getElementsByTagName('button')[3];
+        a.addEventListener('click', function(){
+            window.location = "https://google.com";
+        });
+        let b = document.getElementsByTagName('button')[4];
+        b.addEventListener('click', () =>{
+            window.location = "https://fb.com";
+        });
+
+        let x = document.getElementsByTagName('div')[0];
+        console.log(x)
+        setInterval(() => {
+            // x.classList.toggle('bulb')
+            x.classList.toggle('bulb-off')
+            // x.classList.toggle('bulb-green')
+        }, 300);
+        
+
+    </script>
+</body>
+</html>
