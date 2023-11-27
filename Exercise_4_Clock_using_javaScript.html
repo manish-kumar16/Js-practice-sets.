@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(208, 155, 241);
+        }
+        h1{
+            width: 6%;
+            margin: 30px auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #time{
+            color: red;
+            background-color: rgb(237, 196, 255);
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 33%;
+            margin: 30px auto;
+            text-align: center;
+            border: 2px solid brown;
+            border-radius: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Time</h1>
+    <div id="time"></div>
+    <script>
+        setInterval(()=>{
+            let d = new Date()
+            time.innerHTML = 
+            d.getHours() + ':' +
+            d.getMinutes() + ':' +
+            d.getSeconds();
+            
+
+        }, 1000)
+
+    </script>
+</body>
+</html>
